@@ -1,13 +1,12 @@
 name: SignSystem
-version: 1.0
+version: 2.0
 api-version: 1.17
-description: Simple SignSystem Plugin
+description: Simple Sign System Plugin
 load: STARTUP
 author: Green_Panda
-website: github.com/green_panda
+website: https://github.com/GreenP4nda/SignSystem
 main: at.green_panda.signsystem.SignSystem
 database: false
-prefix: "SignSystem"
 
 commands:
   signsystem:
