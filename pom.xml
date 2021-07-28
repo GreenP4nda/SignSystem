@@ -42,4 +42,12 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>public-gradle-release-local/</id>
+            <url>https://repo.mrmanhd.net/artifactory/public-gradle-release-local/</url>
+        </repository>
+    </distributionManagement>
+
+
 </project>

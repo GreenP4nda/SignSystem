@@ -2,6 +2,7 @@ package at.green_panda.signsystem;
 
 import at.green_panda.signsystem.api.*;
 import at.green_panda.signsystem.commands.SignCommand;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -24,6 +25,10 @@ public class SignSystem extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        int pluginId = 12257;
+        Metrics metrics = new Metrics(this, pluginId);
+
         init();
     }
 
