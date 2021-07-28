@@ -43,6 +43,7 @@ public class SignSystem extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(signManager, this);
         getCommand("signsystem").setExecutor(signCommand);
+        getCommand("signsystem").setPermission("signsystem.main");
 
         for (World world : Bukkit.getWorlds()) {
             signManager.loadConfigSigns(world.getUID());
